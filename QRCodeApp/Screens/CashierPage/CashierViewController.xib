@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CashierViewController" customModule="QRCodeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="nVG-kh-Bsc" id="iF4-B7-y91"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nVG-kh-Bsc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PP-bb-8X5" userLabel="upperView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-AK-ikg">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zrr-dd-H6P" userLabel="bannerView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kasiyer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bny-Og-Ypy">
+                            <rect key="frame" x="178" y="10.5" width="58" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBO-n3-PjV">
+                            <rect key="frame" x="0.0" y="0.0" width="41" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1pr-Dc-FvQ"/>
+                                <constraint firstAttribute="width" constant="41" id="EKP-XW-lHC"/>
+                            </constraints>
+                            <state key="normal" image="backButton">
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="1pr-Dc-FvQ"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="tapBack:" destination="-1" eventType="touchUpInside" id="92x-8m-qNe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LXx-QR-CJo"/>
+                        <constraint firstItem="hBO-n3-PjV" firstAttribute="top" secondItem="Zrr-dd-H6P" secondAttribute="top" id="WMw-8A-xUS"/>
+                        <constraint firstItem="Bny-Og-Ypy" firstAttribute="centerX" secondItem="Zrr-dd-H6P" secondAttribute="centerX" id="XBp-YD-gfb"/>
+                        <constraint firstItem="hBO-n3-PjV" firstAttribute="leading" secondItem="Zrr-dd-H6P" secondAttribute="leading" id="Yzd-ef-s5i"/>
+                        <constraint firstAttribute="bottom" secondItem="hBO-n3-PjV" secondAttribute="bottom" id="gII-El-IMB"/>
+                        <constraint firstItem="Bny-Og-Ypy" firstAttribute="centerY" secondItem="Zrr-dd-H6P" secondAttribute="centerY" id="nS2-0i-NPX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="TXC-sf-YHw"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vRG-AK-ikg" secondAttribute="bottom" id="8yy-CO-1Wh"/>
+                <constraint firstItem="vRG-AK-ikg" firstAttribute="top" secondItem="2PP-bb-8X5" secondAttribute="bottom" constant="36" id="9ax-gC-bfa"/>
+                <constraint firstAttribute="trailing" secondItem="2PP-bb-8X5" secondAttribute="trailing" id="Ajt-bm-vih"/>
+                <constraint firstItem="TXC-sf-YHw" firstAttribute="trailing" secondItem="vRG-AK-ikg" secondAttribute="trailing" id="MwA-Js-63z"/>
+                <constraint firstItem="2PP-bb-8X5" firstAttribute="leading" secondItem="nVG-kh-Bsc" secondAttribute="leading" id="QMk-nP-Z34"/>
+                <constraint firstItem="Zrr-dd-H6P" firstAttribute="trailing" secondItem="TXC-sf-YHw" secondAttribute="trailing" id="R9s-5h-dWi"/>
+                <constraint firstItem="Zrr-dd-H6P" firstAttribute="leading" secondItem="TXC-sf-YHw" secondAttribute="leading" id="c6f-LC-JA8"/>
+                <constraint firstItem="vRG-AK-ikg" firstAttribute="leading" secondItem="TXC-sf-YHw" secondAttribute="leading" id="cfs-ge-gGR"/>
+                <constraint firstItem="Zrr-dd-H6P" firstAttribute="top" secondItem="TXC-sf-YHw" secondAttribute="top" id="dvH-v0-jTw"/>
+                <constraint firstItem="vRG-AK-ikg" firstAttribute="top" secondItem="Zrr-dd-H6P" secondAttribute="bottom" id="sAG-OU-gQL"/>
+                <constraint firstItem="2PP-bb-8X5" firstAttribute="top" secondItem="nVG-kh-Bsc" secondAttribute="top" id="wUZ-9e-fX7"/>
+            </constraints>
+            <point key="canvasLocation" x="-72" y="112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backButton" width="12" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

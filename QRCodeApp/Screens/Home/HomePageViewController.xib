@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController" customModule="QRCodeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Vp3-kO-5TN" id="O4E-wq-azN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Vp3-kO-5TN">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38t-vX-LvV" userLabel="bannerView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QRApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIN-Zf-bsu">
+                            <rect key="frame" x="177.5" y="10.5" width="59" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstItem="NIN-Zf-bsu" firstAttribute="centerY" secondItem="38t-vX-LvV" secondAttribute="centerY" id="TdQ-68-UjB"/>
+                        <constraint firstItem="NIN-Zf-bsu" firstAttribute="centerX" secondItem="38t-vX-LvV" secondAttribute="centerX" id="Tqo-US-4s8"/>
+                        <constraint firstAttribute="height" constant="44" id="e4s-iu-PYg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJh-HP-btB" userLabel="upperView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IFp-Ie-ZdI">
+                    <rect key="frame" x="10" y="298" width="394" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBO-Pt-i1b">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="145"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0u-LK-uTW">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="145"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="27"/>
+                                    <state key="normal" title="Kasiyerim">
+                                        <color key="titleColor" red="0.8991522193" green="0.20972126720000001" blue="0.16856840249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapCashier:" destination="-1" eventType="touchUpInside" id="wvl-xQ-g99"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="r0u-LK-uTW" secondAttribute="trailing" id="4GZ-PG-MqF"/>
+                                <constraint firstItem="r0u-LK-uTW" firstAttribute="top" secondItem="PBO-Pt-i1b" secondAttribute="top" id="4yd-rp-a8E"/>
+                                <constraint firstItem="r0u-LK-uTW" firstAttribute="leading" secondItem="PBO-Pt-i1b" secondAttribute="leading" id="96A-bu-Uhs"/>
+                                <constraint firstAttribute="bottom" secondItem="r0u-LK-uTW" secondAttribute="bottom" id="WwN-pA-qJE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-lA-2SC">
+                            <rect key="frame" x="0.0" y="155" width="394" height="145"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-3S-pKJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="145"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="27"/>
+                                    <state key="normal" title="Müşteriyim">
+                                        <color key="titleColor" red="0.8991522193" green="0.20972126720000001" blue="0.16856840249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tapCustomer:" destination="-1" eventType="touchUpInside" id="erw-SV-p88"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="8Xa-3S-pKJ" firstAttribute="leading" secondItem="rwA-lA-2SC" secondAttribute="leading" id="ArV-Kf-Ltm"/>
+                                <constraint firstAttribute="bottom" secondItem="8Xa-3S-pKJ" secondAttribute="bottom" id="R8f-j2-c40"/>
+                                <constraint firstItem="8Xa-3S-pKJ" firstAttribute="top" secondItem="rwA-lA-2SC" secondAttribute="top" id="roF-Te-lec"/>
+                                <constraint firstAttribute="trailing" secondItem="8Xa-3S-pKJ" secondAttribute="trailing" id="ywT-kh-1Yp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="BGz-vI-VLc"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0Zl-mL-shh"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gJh-HP-btB" firstAttribute="top" secondItem="Vp3-kO-5TN" secondAttribute="top" id="DMU-dx-iDx"/>
+                <constraint firstItem="38t-vX-LvV" firstAttribute="leading" secondItem="0Zl-mL-shh" secondAttribute="leading" id="JId-6o-dWT"/>
+                <constraint firstItem="38t-vX-LvV" firstAttribute="trailing" secondItem="0Zl-mL-shh" secondAttribute="trailing" id="P7n-SN-1x0"/>
+                <constraint firstItem="IFp-Ie-ZdI" firstAttribute="centerY" secondItem="Vp3-kO-5TN" secondAttribute="centerY" id="Su8-gL-iMC"/>
+                <constraint firstItem="0Zl-mL-shh" firstAttribute="trailing" secondItem="IFp-Ie-ZdI" secondAttribute="trailing" constant="10" id="XcX-GQ-ZGR"/>
+                <constraint firstItem="IFp-Ie-ZdI" firstAttribute="leading" secondItem="0Zl-mL-shh" secondAttribute="leading" constant="10" id="YCS-tm-5XH"/>
+                <constraint firstItem="IFp-Ie-ZdI" firstAttribute="centerX" secondItem="Vp3-kO-5TN" secondAttribute="centerX" id="dXr-mb-tz3"/>
+                <constraint firstItem="38t-vX-LvV" firstAttribute="top" secondItem="gJh-HP-btB" secondAttribute="bottom" id="iJX-Xd-9xL"/>
+                <constraint firstAttribute="trailing" secondItem="gJh-HP-btB" secondAttribute="trailing" id="jg2-fl-RSd"/>
+                <constraint firstItem="38t-vX-LvV" firstAttribute="top" secondItem="0Zl-mL-shh" secondAttribute="top" id="qO3-r0-2ZX"/>
+                <constraint firstItem="gJh-HP-btB" firstAttribute="leading" secondItem="Vp3-kO-5TN" secondAttribute="leading" id="yj6-RK-cub"/>
+            </constraints>
+            <point key="canvasLocation" x="85.507246376811594" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
