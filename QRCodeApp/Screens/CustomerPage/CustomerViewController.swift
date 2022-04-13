@@ -7,16 +7,30 @@
 
 import UIKit
 
-class CustomerViewController: UIViewController {
+protocol CustomerViewDisplayLogic {
+    func display(viewModel: CustomerModel.CreateQRCode.ViewModel)
+}
 
+class CustomerViewController: UIViewController, CustomerViewDisplayLogic {
+    var interactor: CustomerBusinessLogic?
+    var router: CustomerRountingLogic?
+    
+    @IBOutlet weak var QRImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    @IBAction func tapBack(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        interactor?.handle(request: CustomerModel.CreateQRCode.Request())
+    }
+
+    func display(viewModel: CustomerModel.CreateQRCode.ViewModel) {
+        self.QRImage.image = viewModel.image
+    }
+    
+    @IBAction func tapBack(_ sender: Any) {
+        router?.routeToBack()
+    }
 }

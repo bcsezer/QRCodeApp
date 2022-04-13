@@ -21,6 +21,11 @@
 		B2733A55280617880060410B /* CustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2733A53280617880060410B /* CustomerViewController.xib */; };
 		B2733A58280617920060410B /* CashierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2733A56280617920060410B /* CashierViewController.swift */; };
 		B2733A59280617920060410B /* CashierViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2733A57280617920060410B /* CashierViewController.xib */; };
+		B2733A5D280764370060410B /* QRCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2733A5C280764370060410B /* QRCodeRepository.swift */; };
+		B2733A5F280765B30060410B /* CustomerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2733A5E280765B30060410B /* CustomerInteractor.swift */; };
+		B2733A61280765C00060410B /* CustomerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2733A60280765C00060410B /* CustomerPresenter.swift */; };
+		B2733A63280765CD0060410B /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2733A62280765CD0060410B /* CustomerModel.swift */; };
+		B2733A65280765DE0060410B /* CustomerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2733A64280765DE0060410B /* CustomerRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		B2733A53280617880060410B /* CustomerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerViewController.xib; sourceTree = "<group>"; };
 		B2733A56280617920060410B /* CashierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierViewController.swift; sourceTree = "<group>"; };
 		B2733A57280617920060410B /* CashierViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CashierViewController.xib; sourceTree = "<group>"; };
+		B2733A5C280764370060410B /* QRCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeRepository.swift; sourceTree = "<group>"; };
+		B2733A5E280765B30060410B /* CustomerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInteractor.swift; sourceTree = "<group>"; };
+		B2733A60280765C00060410B /* CustomerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerPresenter.swift; sourceTree = "<group>"; };
+		B2733A62280765CD0060410B /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
+		B2733A64280765DE0060410B /* CustomerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 		B2733A0D280610730060410B /* QRCodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2733A5A280764160060410B /* Data */,
 				B2733A3F280611480060410B /* Commons */,
 				B2733A3E280611370060410B /* AppAndSceneDelegate */,
 				B2733A422806118E0060410B /* Screens */,
@@ -181,6 +192,10 @@
 			children = (
 				B2733A52280617880060410B /* CustomerViewController.swift */,
 				B2733A53280617880060410B /* CustomerViewController.xib */,
+				B2733A5E280765B30060410B /* CustomerInteractor.swift */,
+				B2733A60280765C00060410B /* CustomerPresenter.swift */,
+				B2733A62280765CD0060410B /* CustomerModel.swift */,
+				B2733A64280765DE0060410B /* CustomerRouter.swift */,
 			);
 			path = CustomerPage;
 			sourceTree = "<group>";
@@ -192,6 +207,22 @@
 				B2733A57280617920060410B /* CashierViewController.xib */,
 			);
 			path = CashierPage;
+			sourceTree = "<group>";
+		};
+		B2733A5A280764160060410B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B2733A5B2807641C0060410B /* QRCodeRepository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B2733A5B2807641C0060410B /* QRCodeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				B2733A5C280764370060410B /* QRCodeRepository.swift */,
+			);
+			path = QRCodeRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,13 +357,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2733A61280765C00060410B /* CustomerPresenter.swift in Sources */,
+				B2733A5F280765B30060410B /* CustomerInteractor.swift in Sources */,
 				B2733A54280617880060410B /* CustomerViewController.swift in Sources */,
 				B2733A48280611BF0060410B /* HomePageViewController.swift in Sources */,
 				B2733A41280611530060410B /* ViewControllerFactory.swift in Sources */,
 				B2733A0F280610730060410B /* AppDelegate.swift in Sources */,
 				B2733A11280610730060410B /* SceneDelegate.swift in Sources */,
 				B2733A4B280616CE0060410B /* HomeRouter.swift in Sources */,
+				B2733A63280765CD0060410B /* CustomerModel.swift in Sources */,
 				B2733A58280617920060410B /* CashierViewController.swift in Sources */,
+				B2733A65280765DE0060410B /* CustomerRouter.swift in Sources */,
+				B2733A5D280764370060410B /* QRCodeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

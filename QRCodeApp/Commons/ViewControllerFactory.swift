@@ -28,6 +28,14 @@ struct ViewControllerFactory: ViewControllerFactoryProtocol {
     
     func makeCustomerPage() -> UIViewController {
         let viewController = CustomerViewController(nibName: "CustomerViewController", bundle: nil)
+        let interactor = CustomerInteractor()
+        let presenter = CustomerPresenter()
+        let router = CustomerRouter()
+        interactor.presenter = presenter
+        presenter.viewcontroller = viewController
+        viewController.interactor = interactor
+        viewController.router = router
+        router.viewController = viewController
         return viewController
     }
     
